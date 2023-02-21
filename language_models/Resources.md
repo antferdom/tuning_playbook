@@ -6,15 +6,24 @@
 
 **Lectures:**
 
+- [NYU Deep Learning Spring 2021 (NYU-DLSP21)](https://atcold.github.io/NYU-DLSP21/): 
+
 - [CS25: Transformers United V2](https://web.stanford.edu/class/cs25/): Since their introduction in 2017, transformers have revolutionized Natural Language Processing (NLP). Now, transformers are finding applications all over Deep Learning, be it computer vision (CV), reinforcement learning (RL), Generative Adversarial Networks (GANs), Speech or even Biology. Among other things, transformers have enabled the creation of powerful language models like GPT-3 and were instrumental in DeepMind's recent AlphaFold2, that tackles protein folding.
 
   In this seminar, we examine the details of how transformers work, and dive deep into the different kinds of transformers and how they're applied in different fields. We do this through a combination of instructor lectures, guest lectures, and classroom discussions. We will invite people at the forefront of transformers research across different domains for guest lectures.
 
   The bulk of this class will comprise of talks from researchers discussing latest breakthroughs with transformers and explaining how they apply them to their fields of research. The objective of the course is to bring together the ideas from ML, NLP, CV, biology and other communities on transformers, understand their broad implications, and spark cross-collaborative research.
 
+## Hugginface
+
+### Generation
+
+- [Generation configs](https://github.com/huggingface/transformers/releases/tag/v4.26.0)
+
 ## Inference Optimization
 
 ***ATTENTION:*** [Large Transformer Model Inference Optimization](https://lilianweng.github.io/posts/2023-01-10-inference-optimization/) (Lilian Weng)
+
 - [Accelerating Text Generation with Confident Adaptive Language Modeling (CALM)](https://ai.googleblog.com/2022/12/accelerating-text-generation-with.html)
 
 > _Presenting Confident Adaptive Language Modeling (CALM), a novel method that allows language models to dynamically modify computational effort when generating text. Learn how CALM can accelerate text generation while preserving output quality_
@@ -66,10 +75,11 @@ Continuously increasing batch size does not guarantee better training accuracy.
 **SetFit**
 
 1. Quantization
-2. Weights Prunning
+2. Weight Pruning
 3. Model distillation (teacher/student)
 
 - [Cramming: Training a Language Model on Single GPU in ONE DAY](https://twitter.com/giffmana/status/1608568387583737856)
+- [Transformers Distil](https://github.com/huggingface/transformers/tree/main/examples/research_projects/distillation): This folder contains the original code used to train Distil* as well as examples showcasing how to use DistilBERT, DistilRoBERTa and DistilGPT2.
 
 ## Dataset
 
@@ -113,6 +123,11 @@ This field has attracted a surprising amount of research, yielding **4** broad s
 ### Debugging & Reversing
 
 - [Reverse engineering a neural network's clever solution to binary addition](https://cprimozic.net/blog/reverse-engineering-a-small-neural-network/)
+
+This post relates an observation I’ve made in my work with GPT-2, which I have not seen made elsewhere. IMO, this observation sheds a good deal of light on how the GPT-2/3/etc models (hereafter just “GPT”) work internally. There are two valid sources of the same information:
+
+- [interpreting GPT: the logit lens](https://www.greaterwrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens#addendum__more_on__input_discarding_): 
+- [[AI ALIGNMENT FORUM](https://www.alignmentforum.org/)](https://www.alignmentforum.org/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens)
 
 
 
